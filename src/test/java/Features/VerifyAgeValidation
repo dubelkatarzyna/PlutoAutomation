@@ -1,0 +1,7 @@
+Feature:
+  Verify age validation works
+
+  Scenario: Verify age is being validated correctly
+    Given a web browser is on personal details page
+    When a user provides age that is outside the range
+    Then Validation tooltip appears

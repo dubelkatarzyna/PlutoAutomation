@@ -1,0 +1,10 @@
+Feature: Requesting claim form
+
+  As a website user
+  I want to request an online claim form
+  So that I am able to make a claim
+
+  Scenario: Request an online claim form
+    Given a web browser is at the start claim page
+    When the user provides its e-mail address and submits
+    Then a link to the online form is being sent

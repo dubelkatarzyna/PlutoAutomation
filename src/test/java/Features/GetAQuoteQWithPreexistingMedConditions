@@ -1,0 +1,22 @@
+Feature: Getting a single trip quote with pre-existing medical conditions
+
+  As a website user with pre-existing medical conditions
+  I want to request a quote
+  So that I am able to buy a travel insurance that I need
+
+  Scenario: Select trip type
+    Given a web browser is at the quote types page
+    When a user selects single trip quote
+    Then trip details page is opened
+
+  Scenario: Provide trip details
+    Given trip details page is opened
+    When a user provides details about the trip
+    And clicks on Next
+    Then personal details page is opened
+
+  Scenario: Provide personal details
+    Given personal details page is opened
+    When a user provides details
+    And clicks on Next button
+    Then no cover is available
